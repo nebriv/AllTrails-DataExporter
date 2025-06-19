@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         AllTrails GPX Bulk Downloader
+// @name         AllTrails Data Exporter
 // @namespace    https://github.com/nebriv/AllTrails-DataExporter
 // @version      5.0.0
-// @description  Bulk downloader for AllTrails GPX files with anti-bot protection and rate limit handling
+// @description  Bulk exporter for AllTrails GPX files with anti-bot protection and rate limit handling
 // @author       nebriv
 // @match        https://www.alltrails.com/*
 // @grant        GM_download
@@ -16,7 +16,7 @@
 
 /*
  * ====================================================================
- * AllTrails GPX Bulk Downloader v5.0.0
+ * AllTrails Data Exporter v5.0.0
  * ====================================================================
  * 
  * A userscript for bulk downloading GPX files from AllTrails
