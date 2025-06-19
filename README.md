@@ -4,16 +4,35 @@
 
 A userscript to bulk download GPX files from your AllTrails recordings. Useful for backing up your data or migrating away from AllTrails.
 
-> **Note**: This project was developed with assistance from AI tools.
+## ⚠️ Warning ⚠️
+
+**Using this script may violate AllTrails Terms of Service and could result in:**
+- IP address blocks
+- Account termination 
+- Loss of your data
+
+**You are strongly encouraged to first request your personal data officially:**
+https://support.alltrails.com/hc/en-us/articles/18177547076116-How-to-request-a-copy-of-your-AllTrails-account-data
+
+**AllTrails failed to respond to my personal data request in a timely manner, forcing the creation of this script to migrate off the platform.**
+
+## Alternatives
+
+Before using this script, consider:
+1. **Official data request** (link above) - Wait 30+ days for response
+2. **Manual export** - Download files individually (time-consuming)
+3. **This script** - Automated but with ToS risks
 
 ## Why This Exists
 
 AllTrails has been making it increasingly difficult to export your own data, and like many platforms, seems to be heading down the path of vendor lock-in. This script helps you get your GPX files and metadata out while you still can.
 
+AllTrails failed to reply to my personal data request in a timely manner, resulting in the creation of this script so I could migrate off the platform.
+
 ## Features
 
 - Bulk download all your AllTrails recordings as GPX files
-- Optionally save trail metadata as JSON (stats, photos, reviews, etc.)
+- Save activity metadata as JSON (stats, photos, reviews, etc.)
 - Human-like behavior to avoid triggering anti-bot measures
 - CAPTCHA detection and handling
 - Rate limit detection with smart retry logic
@@ -33,6 +52,8 @@ AllTrails has been making it increasingly difficult to export your own data, and
 3. **The script will auto-update when you visit AllTrails**
 
 ## Usage
+
+> **Recommendation:** Use a VPN to avoid getting your IP address blocked.
 
 1. **Go to your AllTrails recordings page:**
    ```
@@ -97,13 +118,13 @@ const CONFIG = {
 - Compatible with most mapping/GPS software
 - Named: `route_[timestamp].gpx`
 
-**JSON Files** (optional):
+**JSON Files:**
 - Contains trail metadata, stats, photos, reviews
 - Named: `alltrails_[trail_name]_[date]_[id].json`
 
 ## Technical Details
 
-- Uses human-like delays (1.5-3 minutes between downloads)
+- Uses delays (1.5-3 minutes between downloads)
 - Randomized clicking and scrolling patterns
 - Monitors for rate limits and CAPTCHAs
 - Automatically retries failed downloads
@@ -113,8 +134,9 @@ const CONFIG = {
 
 - Only works with your own AllTrails recordings
 - Requires manual CAPTCHA solving if triggered
-- Download speed limited to avoid detection
+- Download speed limited to avoid getting blocked
 - Some recordings may fail due to AllTrails changes
+- The entire script may fail due to AllTrails site updates
 
 ## Contributing
 
