@@ -10,8 +10,8 @@
 // @license      MIT
 // @homepage     https://github.com/nebriv/AllTrails-DataExporter
 // @supportURL   https://github.com/nebriv/AllTrails-DataExporter/issues
-// @updateURL    https://github.com/nebriv/AllTrails-DataExporter/raw/main/alltrails-bulk-downloader.user.js
-// @downloadURL  https://github.com/nebriv/AllTrails-DataExporter/raw/main/alltrails-bulk-downloader.user.js
+// @updateURL    https://github.com/nebriv/AllTrails-DataExporter/raw/main/alltrails-data-exporter.user.js
+// @downloadURL  https://github.com/nebriv/AllTrails-DataExporter/raw/main/alltrails-data-exporter.user.js
 // ==/UserScript==
 
 /*
