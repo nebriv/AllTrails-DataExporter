@@ -64,7 +64,7 @@
     // ============================================================================
 
     const VERSION = '5.0.0';
-    const SCRIPT_NAME = 'AllTrails GPX Bulk Downloader';
+    const SCRIPT_NAME = 'AllTrails Data Exporter';
 
     // Download timing configuration (in milliseconds)
     const CONFIG = {
